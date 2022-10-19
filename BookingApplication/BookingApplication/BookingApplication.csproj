@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE58EA56-74CA-457D-A7B7-B5F5392EFDB7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BookingApplication</RootNamespace>
+    <AssemblyName>BookingApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdviceMethods.cs" />
+    <Compile Include="AdviceNav.cs" />
+    <Compile Include="AdviceBookingUtil.cs" />
+    <Compile Include="AdviceDBAccess.cs" />
+    <Compile Include="BookingDetails.cs">
+      <DependentUpon>BookingDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookingDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookingDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbAccess\AppointmentBookingDBAccess.cs" />
+    <Compile Include="dbAccess\CustomerDBAccess.cs" />
+    <Compile Include="dbAccess\DataViewDBAccess.cs" />
+    <Compile Include="dbAccess\OfficeDBAccess.cs" />
+    <Compile Include="dbAccess\ServiceDBAccess.cs" />
+    <Compile Include="dbAccess\StaffDBAccess.cs" />
+    <Compile Include="dbAccess\StaffServiceDBAccess.cs" />
+    <Compile Include="exceptions\AddEditBooking.cs" />
+    <Compile Include="exceptions\AddEditCustomer.cs" />
+    <Compile Include="gui\cformAddEditCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\cformAddEditCustomer.Designer.cs">
+      <DependentUpon>cformAddEditCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\cformBookingReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\cformBookingReport.Designer.cs">
+      <DependentUpon>cformBookingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\cformBookingStatisticReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\cformBookingStatisticReport.Designer.cs">
+      <DependentUpon>cformBookingStatisticReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\cformOfficeDiary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\cformOfficeDiary.Designer.cs">
+      <DependentUpon>cformOfficeDiary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\cformViewAllBookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\cformViewAllBookings.Designer.cs">
+      <DependentUpon>cformViewAllBookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\cformViewCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\cformViewCustomers.Designer.cs">
+      <DependentUpon>cformViewCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\cformAddEditBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\cformAddEditBooking.Designer.cs">
+      <DependentUpon>cformAddEditBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\cformHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\cformHome.Designer.cs">
+      <DependentUpon>cformHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\cformMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\cformMenu.Designer.cs">
+      <DependentUpon>cformMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\cform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\cform.Designer.cs">
+      <DependentUpon>cform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="objects\AppointmentBooking.cs" />
+    <Compile Include="objects\Customer.cs" />
+    <Compile Include="objects\Database.cs" />
+    <Compile Include="objects\DataView.cs" />
+    <Compile Include="objects\Office.cs" />
+    <Compile Include="objects\Service.cs" />
+    <Compile Include="objects\Staff.cs" />
+    <Compile Include="objects\StaffService.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BookingReport.rdlc" />
+    <EmbeddedResource Include="BookingStatistics.rdlc" />
+    <EmbeddedResource Include="gui\cformAddEditCustomer.resx">
+      <DependentUpon>cformAddEditCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\cformBookingReport.resx">
+      <DependentUpon>cformBookingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\cformBookingStatisticReport.resx">
+      <DependentUpon>cformBookingStatisticReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\cformOfficeDiary.resx">
+      <DependentUpon>cformOfficeDiary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\cformViewAllBookings.resx">
+      <DependentUpon>cformViewAllBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\cformViewCustomers.resx">
+      <DependentUpon>cformViewCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\cformAddEditBooking.resx">
+      <DependentUpon>cformAddEditBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\cformHome.resx">
+      <DependentUpon>cformHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\cformMenu.resx">
+      <DependentUpon>cformMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\cform.resx">
+      <DependentUpon>cform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="BookingDetails.xsc">
+      <DependentUpon>BookingDetails.xsd</DependentUpon>
+    </None>
+    <None Include="BookingDetails.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookingDetails.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BookingDetails.xss">
+      <DependentUpon>BookingDetails.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banner.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\BookIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdviceBooking.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AdviceBooking_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>AdviceBooking.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\BookingReplaceBanner.png" />
+    <None Include="Resources\lunch.png" />
+    <None Include="Resources\MessageBoxBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

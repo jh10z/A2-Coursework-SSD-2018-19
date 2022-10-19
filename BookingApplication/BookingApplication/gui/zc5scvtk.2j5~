@@ -1,0 +1,775 @@
+﻿namespace BookingApplication.gui
+{
+    partial class formViewBookings
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.button4 = new System.Windows.Forms.Button();
+            this.msToolBar = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backToMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gotoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quickCalenderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calenderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.upcomingNotficiationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.staffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.waitingListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.appointmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.staffToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.rToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.waitingListToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.gotoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.appointmentsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.staffToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.staffToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.waitingListToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calenderToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.upcomingNotificationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.getReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelDragBar = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.picbIcon = new System.Windows.Forms.PictureBox();
+            this.lblFormTitle = new System.Windows.Forms.Label();
+            this.btnTSOne = new System.Windows.Forms.Button();
+            this.btnTSTwo = new System.Windows.Forms.Button();
+            this.btnTSThree = new System.Windows.Forms.Button();
+            this.btnTSFive = new System.Windows.Forms.Button();
+            this.btnTSFour = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBookTest = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cBoxOffices = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnBarTSOne = new System.Windows.Forms.Button();
+            this.btnBarTSFive = new System.Windows.Forms.Button();
+            this.btnBarTSFour = new System.Windows.Forms.Button();
+            this.btnBarTSThree = new System.Windows.Forms.Button();
+            this.btnBarTSTwo = new System.Windows.Forms.Button();
+            this.lblSelectedDate = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblDayOfWeek = new System.Windows.Forms.Label();
+            this.msToolBar.SuspendLayout();
+            this.panelDragBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picbIcon)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.Enabled = false;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(12, 60);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(826, 12);
+            this.button4.TabIndex = 35;
+            this.button4.TabStop = false;
+            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // msToolBar
+            // 
+            this.msToolBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+            this.msToolBar.Dock = System.Windows.Forms.DockStyle.None;
+            this.msToolBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.quickCalenderToolStripMenuItem,
+            this.toolsToolStripMenuItem,
+            this.gotoToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.msToolBar.Location = new System.Drawing.Point(6, 33);
+            this.msToolBar.Name = "msToolBar";
+            this.msToolBar.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.msToolBar.Size = new System.Drawing.Size(215, 24);
+            this.msToolBar.TabIndex = 36;
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.backToMenuToolStripMenuItem,
+            this.gotoToolStripMenuItem1,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // backToMenuToolStripMenuItem
+            // 
+            this.backToMenuToolStripMenuItem.Name = "backToMenuToolStripMenuItem";
+            this.backToMenuToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.backToMenuToolStripMenuItem.Text = "Back to Menu";
+            // 
+            // gotoToolStripMenuItem1
+            // 
+            this.gotoToolStripMenuItem1.Enabled = false;
+            this.gotoToolStripMenuItem1.Name = "gotoToolStripMenuItem1";
+            this.gotoToolStripMenuItem1.Size = new System.Drawing.Size(138, 22);
+            this.gotoToolStripMenuItem1.Text = "Goto";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            // 
+            // quickCalenderToolStripMenuItem
+            // 
+            this.quickCalenderToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.calenderToolStripMenuItem,
+            this.upcomingNotficiationsToolStripMenuItem,
+            this.staffToolStripMenuItem,
+            this.waitingListToolStripMenuItem});
+            this.quickCalenderToolStripMenuItem.Name = "quickCalenderToolStripMenuItem";
+            this.quickCalenderToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.quickCalenderToolStripMenuItem.Text = "View";
+            // 
+            // calenderToolStripMenuItem
+            // 
+            this.calenderToolStripMenuItem.Name = "calenderToolStripMenuItem";
+            this.calenderToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.calenderToolStripMenuItem.Text = "Appointments";
+            // 
+            // upcomingNotficiationsToolStripMenuItem
+            // 
+            this.upcomingNotficiationsToolStripMenuItem.Name = "upcomingNotficiationsToolStripMenuItem";
+            this.upcomingNotficiationsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.upcomingNotficiationsToolStripMenuItem.Text = "Room Bookings";
+            // 
+            // staffToolStripMenuItem
+            // 
+            this.staffToolStripMenuItem.Name = "staffToolStripMenuItem";
+            this.staffToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.staffToolStripMenuItem.Text = "Staff";
+            // 
+            // waitingListToolStripMenuItem
+            // 
+            this.waitingListToolStripMenuItem.Name = "waitingListToolStripMenuItem";
+            this.waitingListToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.waitingListToolStripMenuItem.Text = "Waiting List";
+            // 
+            // toolsToolStripMenuItem
+            // 
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.appointmentsToolStripMenuItem,
+            this.staffToolStripMenuItem1,
+            this.rToolStripMenuItem,
+            this.waitingListToolStripMenuItem1});
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.toolsToolStripMenuItem.Text = "Edit";
+            // 
+            // appointmentsToolStripMenuItem
+            // 
+            this.appointmentsToolStripMenuItem.Name = "appointmentsToolStripMenuItem";
+            this.appointmentsToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.appointmentsToolStripMenuItem.Text = "Appointments";
+            // 
+            // staffToolStripMenuItem1
+            // 
+            this.staffToolStripMenuItem1.Name = "staffToolStripMenuItem1";
+            this.staffToolStripMenuItem1.Size = new System.Drawing.Size(141, 22);
+            this.staffToolStripMenuItem1.Text = "Room Booking";
+            // 
+            // rToolStripMenuItem
+            // 
+            this.rToolStripMenuItem.Name = "rToolStripMenuItem";
+            this.rToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.rToolStripMenuItem.Text = "Staff";
+            // 
+            // waitingListToolStripMenuItem1
+            // 
+            this.waitingListToolStripMenuItem1.Name = "waitingListToolStripMenuItem1";
+            this.waitingListToolStripMenuItem1.Size = new System.Drawing.Size(141, 22);
+            this.waitingListToolStripMenuItem1.Text = "Waiting List";
+            // 
+            // gotoToolStripMenuItem
+            // 
+            this.gotoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.appointmentsToolStripMenuItem1,
+            this.staffToolStripMenuItem2,
+            this.staffToolStripMenuItem3,
+            this.waitingListToolStripMenuItem2});
+            this.gotoToolStripMenuItem.Name = "gotoToolStripMenuItem";
+            this.gotoToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.gotoToolStripMenuItem.Text = "Delete";
+            // 
+            // appointmentsToolStripMenuItem1
+            // 
+            this.appointmentsToolStripMenuItem1.Name = "appointmentsToolStripMenuItem1";
+            this.appointmentsToolStripMenuItem1.Size = new System.Drawing.Size(141, 22);
+            this.appointmentsToolStripMenuItem1.Text = "Appointments";
+            // 
+            // staffToolStripMenuItem2
+            // 
+            this.staffToolStripMenuItem2.Name = "staffToolStripMenuItem2";
+            this.staffToolStripMenuItem2.Size = new System.Drawing.Size(141, 22);
+            this.staffToolStripMenuItem2.Text = "Room Booking";
+            // 
+            // staffToolStripMenuItem3
+            // 
+            this.staffToolStripMenuItem3.Name = "staffToolStripMenuItem3";
+            this.staffToolStripMenuItem3.Size = new System.Drawing.Size(141, 22);
+            this.staffToolStripMenuItem3.Text = "Staff";
+            // 
+            // waitingListToolStripMenuItem2
+            // 
+            this.waitingListToolStripMenuItem2.Name = "waitingListToolStripMenuItem2";
+            this.waitingListToolStripMenuItem2.Size = new System.Drawing.Size(141, 22);
+            this.waitingListToolStripMenuItem2.Text = "Waiting List";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.calenderToolStripMenuItem1,
+            this.upcomingNotificationsToolStripMenuItem,
+            this.getReportToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Tools";
+            // 
+            // calenderToolStripMenuItem1
+            // 
+            this.calenderToolStripMenuItem1.Name = "calenderToolStripMenuItem1";
+            this.calenderToolStripMenuItem1.Size = new System.Drawing.Size(182, 22);
+            this.calenderToolStripMenuItem1.Text = "Calender";
+            // 
+            // upcomingNotificationsToolStripMenuItem
+            // 
+            this.upcomingNotificationsToolStripMenuItem.Name = "upcomingNotificationsToolStripMenuItem";
+            this.upcomingNotificationsToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.upcomingNotificationsToolStripMenuItem.Text = "Upcoming Notifications";
+            // 
+            // getReportToolStripMenuItem
+            // 
+            this.getReportToolStripMenuItem.Name = "getReportToolStripMenuItem";
+            this.getReportToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.getReportToolStripMenuItem.Text = "Get Report";
+            // 
+            // panelDragBar
+            // 
+            this.panelDragBar.BackColor = System.Drawing.Color.Transparent;
+            this.panelDragBar.Controls.Add(this.btnExit);
+            this.panelDragBar.Controls.Add(this.picbIcon);
+            this.panelDragBar.Controls.Add(this.lblFormTitle);
+            this.panelDragBar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelDragBar.Location = new System.Drawing.Point(0, 0);
+            this.panelDragBar.Name = "panelDragBar";
+            this.panelDragBar.Size = new System.Drawing.Size(850, 29);
+            this.panelDragBar.TabIndex = 37;
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Red;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(802, 4);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(45, 22);
+            this.btnExit.TabIndex = 19;
+            this.btnExit.TabStop = false;
+            this.btnExit.Text = "Exit";
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExit.UseVisualStyleBackColor = false;
+            // 
+            // picbIcon
+            // 
+            this.picbIcon.Cursor = System.Windows.Forms.Cursors.No;
+            this.picbIcon.Enabled = false;
+            this.picbIcon.Image = global::BookingApplication.Properties.Resources.BookIcon;
+            this.picbIcon.Location = new System.Drawing.Point(7, 4);
+            this.picbIcon.Name = "picbIcon";
+            this.picbIcon.Size = new System.Drawing.Size(22, 22);
+            this.picbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picbIcon.TabIndex = 19;
+            this.picbIcon.TabStop = false;
+            // 
+            // lblFormTitle
+            // 
+            this.lblFormTitle.AutoSize = true;
+            this.lblFormTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblFormTitle.Cursor = System.Windows.Forms.Cursors.No;
+            this.lblFormTitle.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFormTitle.ForeColor = System.Drawing.Color.White;
+            this.lblFormTitle.Location = new System.Drawing.Point(31, 8);
+            this.lblFormTitle.Name = "lblFormTitle";
+            this.lblFormTitle.Size = new System.Drawing.Size(215, 17);
+            this.lblFormTitle.TabIndex = 1;
+            this.lblFormTitle.Text = "Advice | Add / Edit Appointments";
+            // 
+            // btnTSOne
+            // 
+            this.btnTSOne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnTSOne.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTSOne.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnTSOne.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.btnTSOne.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btnTSOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTSOne.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTSOne.ForeColor = System.Drawing.Color.White;
+            this.btnTSOne.Location = new System.Drawing.Point(8, 57);
+            this.btnTSOne.Name = "btnTSOne";
+            this.btnTSOne.Size = new System.Drawing.Size(150, 111);
+            this.btnTSOne.TabIndex = 39;
+            this.btnTSOne.TabStop = false;
+            this.btnTSOne.Text = "10am - 11am";
+            this.btnTSOne.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnTSOne.UseVisualStyleBackColor = false;
+            // 
+            // btnTSTwo
+            // 
+            this.btnTSTwo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnTSTwo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTSTwo.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnTSTwo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.btnTSTwo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btnTSTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTSTwo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTSTwo.ForeColor = System.Drawing.Color.White;
+            this.btnTSTwo.Location = new System.Drawing.Point(169, 57);
+            this.btnTSTwo.Name = "btnTSTwo";
+            this.btnTSTwo.Size = new System.Drawing.Size(150, 111);
+            this.btnTSTwo.TabIndex = 40;
+            this.btnTSTwo.TabStop = false;
+            this.btnTSTwo.Text = "11am - 12pm";
+            this.btnTSTwo.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnTSTwo.UseVisualStyleBackColor = false;
+            // 
+            // btnTSThree
+            // 
+            this.btnTSThree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnTSThree.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTSThree.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnTSThree.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.btnTSThree.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btnTSThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTSThree.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTSThree.ForeColor = System.Drawing.Color.White;
+            this.btnTSThree.Location = new System.Drawing.Point(330, 57);
+            this.btnTSThree.Name = "btnTSThree";
+            this.btnTSThree.Size = new System.Drawing.Size(150, 111);
+            this.btnTSThree.TabIndex = 41;
+            this.btnTSThree.TabStop = false;
+            this.btnTSThree.Text = "12pm - 1pm";
+            this.btnTSThree.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnTSThree.UseVisualStyleBackColor = false;
+            // 
+            // btnTSFive
+            // 
+            this.btnTSFive.BackColor = System.Drawing.Color.Red;
+            this.btnTSFive.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTSFive.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnTSFive.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnTSFive.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnTSFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTSFive.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTSFive.ForeColor = System.Drawing.Color.White;
+            this.btnTSFive.Location = new System.Drawing.Point(652, 57);
+            this.btnTSFive.Name = "btnTSFive";
+            this.btnTSFive.Size = new System.Drawing.Size(150, 111);
+            this.btnTSFive.TabIndex = 44;
+            this.btnTSFive.TabStop = false;
+            this.btnTSFive.Text = "2pm - 3pm";
+            this.btnTSFive.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnTSFive.UseVisualStyleBackColor = false;
+            // 
+            // btnTSFour
+            // 
+            this.btnTSFour.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnTSFour.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTSFour.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnTSFour.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnTSFour.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnTSFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTSFour.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTSFour.ForeColor = System.Drawing.Color.White;
+            this.btnTSFour.Location = new System.Drawing.Point(491, 57);
+            this.btnTSFour.Name = "btnTSFour";
+            this.btnTSFour.Size = new System.Drawing.Size(150, 111);
+            this.btnTSFour.TabIndex = 45;
+            this.btnTSFour.TabStop = false;
+            this.btnTSFour.Text = "1pm - 2pm";
+            this.btnTSFour.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnTSFour.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnBookTest);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.cBoxOffices);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.btnBarTSOne);
+            this.panel1.Controls.Add(this.btnBarTSFive);
+            this.panel1.Controls.Add(this.btnBarTSFour);
+            this.panel1.Controls.Add(this.btnBarTSThree);
+            this.panel1.Controls.Add(this.btnBarTSTwo);
+            this.panel1.Controls.Add(this.btnTSOne);
+            this.panel1.Controls.Add(this.btnTSFour);
+            this.panel1.Controls.Add(this.btnTSTwo);
+            this.panel1.Controls.Add(this.btnTSFive);
+            this.panel1.Controls.Add(this.btnTSThree);
+            this.panel1.Location = new System.Drawing.Point(19, 153);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(813, 306);
+            this.panel1.TabIndex = 46;
+            // 
+            // btnBookTest
+            // 
+            this.btnBookTest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnBookTest.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBookTest.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnBookTest.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.btnBookTest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btnBookTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBookTest.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookTest.ForeColor = System.Drawing.Color.White;
+            this.btnBookTest.Location = new System.Drawing.Point(652, 257);
+            this.btnBookTest.Name = "btnBookTest";
+            this.btnBookTest.Size = new System.Drawing.Size(150, 30);
+            this.btnBookTest.TabIndex = 56;
+            this.btnBookTest.TabStop = false;
+            this.btnBookTest.Text = "Test";
+            this.btnBookTest.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnBookTest.UseVisualStyleBackColor = false;
+            this.btnBookTest.Click += new System.EventHandler(this.btnBookTest_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(5, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 17);
+            this.label1.TabIndex = 55;
+            this.label1.Text = "Offices:";
+            // 
+            // cBoxOffices
+            // 
+            this.cBoxOffices.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cBoxOffices.FormattingEnabled = true;
+            this.cBoxOffices.Location = new System.Drawing.Point(8, 30);
+            this.cBoxOffices.Name = "cBoxOffices";
+            this.cBoxOffices.Size = new System.Drawing.Size(150, 21);
+            this.cBoxOffices.TabIndex = 54;
+            this.cBoxOffices.SelectedIndexChanged += new System.EventHandler(this.cBoxOffices_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(432, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(370, 18);
+            this.label2.TabIndex = 53;
+            this.label2.Text = "*Click an open or booked appointment to add or edit";
+            // 
+            // btnBarTSOne
+            // 
+            this.btnBarTSOne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnBarTSOne.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBarTSOne.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnBarTSOne.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.btnBarTSOne.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btnBarTSOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBarTSOne.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBarTSOne.ForeColor = System.Drawing.Color.White;
+            this.btnBarTSOne.Location = new System.Drawing.Point(8, 174);
+            this.btnBarTSOne.Name = "btnBarTSOne";
+            this.btnBarTSOne.Size = new System.Drawing.Size(150, 30);
+            this.btnBarTSOne.TabIndex = 48;
+            this.btnBarTSOne.TabStop = false;
+            this.btnBarTSOne.Text = "Open";
+            this.btnBarTSOne.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnBarTSOne.UseVisualStyleBackColor = false;
+            // 
+            // btnBarTSFive
+            // 
+            this.btnBarTSFive.BackColor = System.Drawing.Color.Red;
+            this.btnBarTSFive.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBarTSFive.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnBarTSFive.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnBarTSFive.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnBarTSFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBarTSFive.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBarTSFive.ForeColor = System.Drawing.Color.White;
+            this.btnBarTSFive.Location = new System.Drawing.Point(652, 174);
+            this.btnBarTSFive.Name = "btnBarTSFive";
+            this.btnBarTSFive.Size = new System.Drawing.Size(150, 30);
+            this.btnBarTSFive.TabIndex = 52;
+            this.btnBarTSFive.TabStop = false;
+            this.btnBarTSFive.Text = "Urgent";
+            this.btnBarTSFive.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnBarTSFive.UseVisualStyleBackColor = false;
+            // 
+            // btnBarTSFour
+            // 
+            this.btnBarTSFour.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnBarTSFour.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBarTSFour.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnBarTSFour.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnBarTSFour.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnBarTSFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBarTSFour.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBarTSFour.ForeColor = System.Drawing.Color.White;
+            this.btnBarTSFour.Location = new System.Drawing.Point(491, 174);
+            this.btnBarTSFour.Name = "btnBarTSFour";
+            this.btnBarTSFour.Size = new System.Drawing.Size(150, 30);
+            this.btnBarTSFour.TabIndex = 51;
+            this.btnBarTSFour.TabStop = false;
+            this.btnBarTSFour.Text = "Booked";
+            this.btnBarTSFour.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnBarTSFour.UseVisualStyleBackColor = false;
+            // 
+            // btnBarTSThree
+            // 
+            this.btnBarTSThree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnBarTSThree.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBarTSThree.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnBarTSThree.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.btnBarTSThree.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btnBarTSThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBarTSThree.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBarTSThree.ForeColor = System.Drawing.Color.White;
+            this.btnBarTSThree.Location = new System.Drawing.Point(330, 174);
+            this.btnBarTSThree.Name = "btnBarTSThree";
+            this.btnBarTSThree.Size = new System.Drawing.Size(150, 30);
+            this.btnBarTSThree.TabIndex = 50;
+            this.btnBarTSThree.TabStop = false;
+            this.btnBarTSThree.Text = "Open";
+            this.btnBarTSThree.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnBarTSThree.UseVisualStyleBackColor = false;
+            // 
+            // btnBarTSTwo
+            // 
+            this.btnBarTSTwo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnBarTSTwo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBarTSTwo.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnBarTSTwo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.btnBarTSTwo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btnBarTSTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBarTSTwo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBarTSTwo.ForeColor = System.Drawing.Color.White;
+            this.btnBarTSTwo.Location = new System.Drawing.Point(169, 174);
+            this.btnBarTSTwo.Name = "btnBarTSTwo";
+            this.btnBarTSTwo.Size = new System.Drawing.Size(150, 30);
+            this.btnBarTSTwo.TabIndex = 49;
+            this.btnBarTSTwo.TabStop = false;
+            this.btnBarTSTwo.Text = "Open";
+            this.btnBarTSTwo.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnBarTSTwo.UseVisualStyleBackColor = false;
+            // 
+            // lblSelectedDate
+            // 
+            this.lblSelectedDate.AutoSize = true;
+            this.lblSelectedDate.BackColor = System.Drawing.Color.Transparent;
+            this.lblSelectedDate.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSelectedDate.ForeColor = System.Drawing.Color.White;
+            this.lblSelectedDate.Location = new System.Drawing.Point(3, 36);
+            this.lblSelectedDate.Name = "lblSelectedDate";
+            this.lblSelectedDate.Size = new System.Drawing.Size(164, 17);
+            this.lblSelectedDate.TabIndex = 47;
+            this.lblSelectedDate.Text = "Selected Date: 12/12/18";
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Gray;
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(725, 465);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(107, 31);
+            this.btnBack.TabIndex = 47;
+            this.btnBack.TabStop = false;
+            this.btnBack.Text = "Go Back";
+            this.btnBack.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Location = new System.Drawing.Point(19, 78);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(235, 69);
+            this.panel4.TabIndex = 49;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(1, 40);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(224, 24);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Daily View of Bookings";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.lblDayOfWeek);
+            this.panel2.Controls.Add(this.lblSelectedDate);
+            this.panel2.Location = new System.Drawing.Point(260, 89);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(572, 58);
+            this.panel2.TabIndex = 55;
+            // 
+            // lblDayOfWeek
+            // 
+            this.lblDayOfWeek.AutoSize = true;
+            this.lblDayOfWeek.BackColor = System.Drawing.Color.Transparent;
+            this.lblDayOfWeek.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDayOfWeek.ForeColor = System.Drawing.Color.White;
+            this.lblDayOfWeek.Location = new System.Drawing.Point(1, 4);
+            this.lblDayOfWeek.Name = "lblDayOfWeek";
+            this.lblDayOfWeek.Size = new System.Drawing.Size(161, 18);
+            this.lblDayOfWeek.TabIndex = 48;
+            this.lblDayOfWeek.Text = "Day of Week: Monday";
+            // 
+            // formViewBookings
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::BookingApplication.Properties.Resources.Background;
+            this.ClientSize = new System.Drawing.Size(850, 508);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelDragBar);
+            this.Controls.Add(this.msToolBar);
+            this.Controls.Add(this.button4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "formViewBookings";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "formAddEditAppointments";
+            this.Load += new System.EventHandler(this.formViewBookings_Load);
+            this.msToolBar.ResumeLayout(false);
+            this.msToolBar.PerformLayout();
+            this.panelDragBar.ResumeLayout(false);
+            this.panelDragBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picbIcon)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.MenuStrip msToolBar;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backToMenuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gotoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quickCalenderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calenderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem upcomingNotficiationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem staffToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem waitingListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem appointmentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem staffToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem rToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem waitingListToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem gotoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem appointmentsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem staffToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem staffToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem waitingListToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calenderToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem upcomingNotificationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem getReportToolStripMenuItem;
+        private System.Windows.Forms.Panel panelDragBar;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.PictureBox picbIcon;
+        private System.Windows.Forms.Label lblFormTitle;
+        private System.Windows.Forms.Button btnTSOne;
+        private System.Windows.Forms.Button btnTSTwo;
+        private System.Windows.Forms.Button btnTSThree;
+        private System.Windows.Forms.Button btnTSFive;
+        private System.Windows.Forms.Button btnTSFour;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblSelectedDate;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnBarTSFive;
+        private System.Windows.Forms.Button btnBarTSFour;
+        private System.Windows.Forms.Button btnBarTSThree;
+        private System.Windows.Forms.Button btnBarTSTwo;
+        private System.Windows.Forms.Button btnBarTSOne;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblDayOfWeek;
+        private System.Windows.Forms.Button btnBookTest;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cBoxOffices;
+    }
+}

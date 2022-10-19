@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BookingDetails" targetNamespace="http://tempuri.org/BookingDetails.xsd" xmlns:mstns="http://tempuri.org/BookingDetails.xsd" xmlns="http://tempuri.org/BookingDetails.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AdviceBookingConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AdviceBookingConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BookingApplication.Properties.Settings.GlobalReference.Default.AdviceBookingConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BookingDetailsTableTableAdapter" GeneratorDataComponentClassName="BookingDetailsTableTableAdapter" Name="BookingDetailsTable" UserDataComponentName="BookingDetailsTableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AdviceBookingConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        AppointmentBooking.BookingId, AppointmentBooking.TimeSlot, AppointmentBooking.Date, Staff.Forename, Staff.Surname, Customer.DOB, Customer.Address, Customer.Town, Customer.Postcode, Customer.EmailAddress, 
+                         Customer.Telephone, Office.RoomNo, Customer.Forename AS Expr1, Customer.Surname AS Expr2, StaffService.StaffServiceId, StaffService.ServiceId, Service.Name, AppointmentBooking.Status
+FROM            AppointmentBooking INNER JOIN
+                         Customer ON AppointmentBooking.CustomerId = Customer.CustomerId INNER JOIN
+                         Office ON AppointmentBooking.OfficeId = Office.OfficeId INNER JOIN
+                         StaffService ON AppointmentBooking.StaffServiceId = StaffService.StaffServiceId INNER JOIN
+                         Service ON StaffService.ServiceId = Service.ServiceId INNER JOIN
+                         Staff ON StaffService.StaffId = Staff.StaffId</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BookingId" DataSetColumn="BookingId" />
+              <Mapping SourceColumn="TimeSlot" DataSetColumn="TimeSlot" />
+              <Mapping SourceColumn="Date" DataSetColumn="Date" />
+              <Mapping SourceColumn="Forename" DataSetColumn="Forename" />
+              <Mapping SourceColumn="Surname" DataSetColumn="Surname" />
+              <Mapping SourceColumn="DOB" DataSetColumn="DOB" />
+              <Mapping SourceColumn="Address" DataSetColumn="Address" />
+              <Mapping SourceColumn="Town" DataSetColumn="Town" />
+              <Mapping SourceColumn="Postcode" DataSetColumn="Postcode" />
+              <Mapping SourceColumn="EmailAddress" DataSetColumn="EmailAddress" />
+              <Mapping SourceColumn="Telephone" DataSetColumn="Telephone" />
+              <Mapping SourceColumn="RoomNo" DataSetColumn="RoomNo" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="Expr2" DataSetColumn="Expr2" />
+              <Mapping SourceColumn="StaffServiceId" DataSetColumn="StaffServiceId" />
+              <Mapping SourceColumn="ServiceId" DataSetColumn="ServiceId" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="AdviceBookingConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        AppointmentBooking.BookingId, AppointmentBooking.TimeSlot, AppointmentBooking.Date, Service.Name, Staff.Forename, Staff.Surname, Customer.DOB, Customer.Address, Customer.Town, Customer.Postcode, 
+                         Customer.EmailAddress, Customer.Telephone, Office.RoomNo, Customer.Forename AS Expr1, Customer.Surname AS Expr2, StaffService.StaffServiceId, StaffService.ServiceId, AppointmentBooking.Status
+FROM            AppointmentBooking INNER JOIN
+                         Customer ON AppointmentBooking.CustomerId = Customer.CustomerId INNER JOIN
+                         Office ON AppointmentBooking.OfficeId = Office.OfficeId INNER JOIN
+                         StaffService ON AppointmentBooking.StaffServiceId = StaffService.StaffServiceId INNER JOIN
+                         Service ON StaffService.ServiceId = Service.ServiceId INNER JOIN
+                         Staff ON StaffService.StaffId = Staff.StaffId
+WHERE        (AppointmentBooking.BookingId = @bookingId)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="bookingId" ColumnName="BookingId" DataSourceName="[E:\SSD FINAL\BOOKINGAPPLICATION\BOOKINGAPPLICATION\ADVICEBOOKING.MDF].dbo.AppointmentBooking" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@bookingId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="BookingId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="AdviceBookingConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="MonthStats" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="getStats" GeneratorSourceName="MonthStats" GetMethodModifier="Public" GetMethodName="getStats" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="getStats" UserSourceName="MonthStats">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        AppointmentBooking.BookingId, AppointmentBooking.TimeSlot, AppointmentBooking.Date, Service.Name, Staff.Forename, Staff.Surname, Customer.DOB, Customer.Address, Customer.Town, Customer.Postcode, 
+                         Customer.EmailAddress, Customer.Telephone, Office.RoomNo, Customer.Forename AS Expr1, Customer.Surname AS Expr2, StaffService.StaffServiceId, StaffService.ServiceId, AppointmentBooking.Status
+FROM            AppointmentBooking INNER JOIN
+                         Customer ON AppointmentBooking.CustomerId = Customer.CustomerId INNER JOIN
+                         Office ON AppointmentBooking.OfficeId = Office.OfficeId INNER JOIN
+                         StaffService ON AppointmentBooking.StaffServiceId = StaffService.StaffServiceId INNER JOIN
+                         Service ON StaffService.ServiceId = Service.ServiceId INNER JOIN
+                         Staff ON StaffService.StaffId = Staff.StaffId
+WHERE        (@month = MONTH(AppointmentBooking.Date)) AND (@year = YEAR(AppointmentBooking.Date))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="month" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="@month" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="year" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="@year" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BookingDetails" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="BookingDetails" msprop:Generator_UserDSName="BookingDetails">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BookingDetailsTable" msprop:Generator_TableClassName="BookingDetailsTableDataTable" msprop:Generator_TableVarName="tableBookingDetailsTable" msprop:Generator_RowChangedName="BookingDetailsTableRowChanged" msprop:Generator_TablePropName="BookingDetailsTable" msprop:Generator_RowDeletingName="BookingDetailsTableRowDeleting" msprop:Generator_RowChangingName="BookingDetailsTableRowChanging" msprop:Generator_RowEvHandlerName="BookingDetailsTableRowChangeEventHandler" msprop:Generator_RowDeletedName="BookingDetailsTableRowDeleted" msprop:Generator_RowClassName="BookingDetailsTableRow" msprop:Generator_UserTableName="BookingDetailsTable" msprop:Generator_RowEvArgName="BookingDetailsTableRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BookingId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnBookingId" msprop:Generator_ColumnPropNameInRow="BookingId" msprop:Generator_ColumnPropNameInTable="BookingIdColumn" msprop:Generator_UserColumnName="BookingId" type="xs:int" />
+              <xs:element name="TimeSlot" msprop:Generator_ColumnVarNameInTable="columnTimeSlot" msprop:Generator_ColumnPropNameInRow="TimeSlot" msprop:Generator_ColumnPropNameInTable="TimeSlotColumn" msprop:Generator_UserColumnName="TimeSlot" type="xs:int" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Forename" msprop:Generator_ColumnVarNameInTable="columnForename" msprop:Generator_ColumnPropNameInRow="Forename" msprop:Generator_ColumnPropNameInTable="ForenameColumn" msprop:Generator_UserColumnName="Forename">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Surname" msprop:Generator_ColumnVarNameInTable="columnSurname" msprop:Generator_ColumnPropNameInRow="Surname" msprop:Generator_ColumnPropNameInTable="SurnameColumn" msprop:Generator_UserColumnName="Surname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DOB" msprop:Generator_ColumnVarNameInTable="columnDOB" msprop:Generator_ColumnPropNameInRow="DOB" msprop:Generator_ColumnPropNameInTable="DOBColumn" msprop:Generator_UserColumnName="DOB" type="xs:dateTime" />
+              <xs:element name="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" msprop:Generator_UserColumnName="Address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Town" msprop:Generator_ColumnVarNameInTable="columnTown" msprop:Generator_ColumnPropNameInRow="Town" msprop:Generator_ColumnPropNameInTable="TownColumn" msprop:Generator_UserColumnName="Town">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Postcode" msprop:Generator_ColumnVarNameInTable="columnPostcode" msprop:Generator_ColumnPropNameInRow="Postcode" msprop:Generator_ColumnPropNameInTable="PostcodeColumn" msprop:Generator_UserColumnName="Postcode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmailAddress" msprop:Generator_ColumnVarNameInTable="columnEmailAddress" msprop:Generator_ColumnPropNameInRow="EmailAddress" msprop:Generator_ColumnPropNameInTable="EmailAddressColumn" msprop:Generator_UserColumnName="EmailAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telephone" msprop:Generator_ColumnVarNameInTable="columnTelephone" msprop:Generator_ColumnPropNameInRow="Telephone" msprop:Generator_ColumnPropNameInTable="TelephoneColumn" msprop:Generator_UserColumnName="Telephone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RoomNo" msprop:Generator_ColumnVarNameInTable="columnRoomNo" msprop:Generator_ColumnPropNameInRow="RoomNo" msprop:Generator_ColumnPropNameInTable="RoomNoColumn" msprop:Generator_UserColumnName="RoomNo" type="xs:int" />
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr2" msprop:Generator_ColumnVarNameInTable="columnExpr2" msprop:Generator_ColumnPropNameInRow="Expr2" msprop:Generator_ColumnPropNameInTable="Expr2Column" msprop:Generator_UserColumnName="Expr2">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StaffServiceId" msprop:Generator_ColumnVarNameInTable="columnStaffServiceId" msprop:Generator_ColumnPropNameInRow="StaffServiceId" msprop:Generator_ColumnPropNameInTable="StaffServiceIdColumn" msprop:Generator_UserColumnName="StaffServiceId" type="xs:int" />
+              <xs:element name="ServiceId" msprop:Generator_ColumnVarNameInTable="columnServiceId" msprop:Generator_ColumnPropNameInRow="ServiceId" msprop:Generator_ColumnPropNameInTable="ServiceIdColumn" msprop:Generator_UserColumnName="ServiceId" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BookingDetailsTable" />
+      <xs:field xpath="mstns:BookingId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
